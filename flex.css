@@ -1,0 +1,43 @@
+.container {
+  background-color: lightcoral;
+  width: 50rem;
+  height: 50rem;
+  border: 5px solid #7bc113;
+  border-radius: 25px;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  align-content: center;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.2rem;
+  border: 3px solid #f0911c;
+  background-color: gold;
+  color: white;
+  font-style: normal;
+  font-size: xxx-large;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .box-one {
+  flex-grow: 1;
+}
+
+.box-two {
+  flex-grow: 0;
+}
+
+.box-three {
+  flex-grow: 0;
+}
+.box-four {
+  flex-grow: 1;
+}

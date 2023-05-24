@@ -1,0 +1,36 @@
+.container {
+  background-color: lightcoral;
+  height: 100vh;
+  display: grid;
+  grid-template-rows:100px auto 100px;
+  grid-template-columns: 20fr 80fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-areas: 
+  "header    header"
+  "sidebar   main"
+  "footer   footer";
+}
+
+.box {
+  border: 5px solid #a4e55f;
+  border-radius: 25px;
+  background-color: orange;
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+grid-area: header;
+}
+
+.footer {
+grid-area: footer;
+}
+
+.nav-bar{
+grid-area: sidebar;
+}
