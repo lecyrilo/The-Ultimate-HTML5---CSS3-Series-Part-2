@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: rgb(20, 20, 20);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.box {
+  padding: 1rem;
+  background-color: gold;
+}
+
+.box:nth-child(2) {
+  background-color: deepskyblue;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .box {
+    background-color: lightcoral;
+  }
+}
+
+@media print {
+
+  body, html {
+    background: rgb(167, 207, 148);
+    font-size: 12pt;
+  }
+
+  .box {
+    padding: 1rem;
+  }
+  
+}

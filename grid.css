@@ -1,36 +1,36 @@
-.container {
-  background-color: lightcoral;
-  height: 100vh;
+
+.container{
   display: grid;
-  grid-template-rows:100px auto 100px;
-  grid-template-columns: 20fr 80fr;
-  row-gap: 5px;
-  column-gap: 5px;
-  grid-template-areas: 
-  "header    header"
-  "sidebar   main"
-  "footer   footer";
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+.box{
+  border: 5px solid #000;
+  color: rgb(162, 168, 43);
 }
 
-.box {
-  border: 5px solid #a4e55f;
-  border-radius: 25px;
-  background-color: orange;
-  color: white;
-  font-size: xx-large;
-  font-weight: bolder;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.box1{
+grid-column: 1/4;
 }
-.logo {
-grid-area: header;
+.box2{
+  grid-row: 2/4;
 }
-
-.footer {
-grid-area: footer;
+.box3{
+  grid-column: 2/3;
 }
-
-.nav-bar{
-grid-area: sidebar;
+.box4{
+  grid-column: 3/4;
+}
+.box5{
+  grid-column: 2/4;
+}
+.box6{
+  grid-column: 1/3;
+}
+.box7{
+  grid-column: 3/4;
+}
+.box8{
+  grid-column: 1/4;
 }
